@@ -218,8 +218,9 @@
     }
     const A = CFG.assets || {};
     const list = exes(release);
-    const x64 = findBy(list, A.x64 || ['x64']) || (list.length === 1 ? list[0] : list.find(a => !findBy([a], A.x86 || ['x86'])));
+    const x64 = findBy(list, A.x64 || ['x64']) || (list.length === 1 ? list[0] : list.find(a => !findBy([a], (A.x86 || ['x86']).concat(A.arm64 || ['arm64']))));
     const x86 = findBy(list, A.x86 || ['x86']);
+    const arm64 = findBy(list, A.arm64 || ['arm64']);
     const ver = release.tag_name.replace(/^v/i, '');
 
     $('.js-version').textContent = ver;
@@ -229,6 +230,10 @@
 
     if (x64) { $('.js-dl-x64').href = x64.browser_download_url; }
     if (x86) { $('.js-dl-x86').href = x86.browser_download_url; } else if (x64) { $('.js-dl-x86').hidden = true; }
+    if (arm64) {
+      const b = $('.js-dl-arm64'); b.href = arm64.browser_download_url; b.hidden = false;
+      const n = $('.js-arm-note'); if (n) n.hidden = false;
+    }
     const pick = (arch === 'x86' && x86) ? x86 : (x64 || x86);
     if (pick) {
       $('.js-size').textContent = fmtSize(pick.size);

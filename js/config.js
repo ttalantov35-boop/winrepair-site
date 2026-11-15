@@ -13,7 +13,8 @@ window.SITE_CONFIG = {
   // Если в релизе один .exe — он будет считаться 64-битным.
   assets: {
     x64: ['WinRepair_x64.exe'],
-    x86: ['WinRepair_x86.exe']
+    x86: ['WinRepair_x86.exe'],
+    arm64: ['WinRepair_arm64.exe']
   },
 
   // Контакты (оставьте пустым, чтобы скрыть строку)
