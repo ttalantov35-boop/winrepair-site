@@ -9,14 +9,14 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="canonical" href="https://your-username.github.io/winrepair-toolkit/">
+  <link rel="canonical" href="https://ttalantov35-boop.github.io/winrepair.github.io/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="WinRepair Toolkit — ремонт Windows в один клик">
   <meta property="og:description" content="Бесплатная утилита с открытым кодом: диагностика и исправление неполадок Windows 10 и 11.">
-  <meta property="og:url" content="https://your-username.github.io/winrepair-toolkit/">
-  <meta property="og:image" content="https://your-username.github.io/winrepair-toolkit/img/og-image.png">
+  <meta property="og:url" content="https://ttalantov35-boop.github.io/winrepair.github.io/">
+  <meta property="og:image" content="https://ttalantov35-boop.github.io/winrepair.github.io/img/og-image.png">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
@@ -91,7 +91,7 @@
         </a>
 
         <h1 class="hero-title" data-i18n="hero.title">Windows снова работает как надо</h1>
-        <p class="hero-lead" data-i18n="hero.lead">Диагностика и ремонт Windows 10 и 11 в одном маленьком файле: системные файлы, загрузка, диски, сеть, драйверы. Работает оффлайн с Windows, также в среде «Windows RE + WinRepair».</p>
+        <p class="hero-lead" data-i18n="hero.lead">Диагностика и ремонт Windows 10 и 11 в одном маленьком файле: системные файлы, загрузка, диски, сеть, драйверы, работа оффлайн с Windows, также в среде «Windows RE + WinRepair».</p>
 
         <div class="hero-actions">
           <a class="btn btn-primary btn-glow js-dl-primary" href="#download">
@@ -104,7 +104,7 @@
             <span class="btn-stars js-gh-stars" hidden></span>
           </a>
         </div>
-        <p class="hero-meta"><span class="js-file-meta">winrepair.exe, 1,8 МБ</span><span class="sep" aria-hidden="true"></span><span data-i18n="hero.meta">Windows 10 и 11, x64 и x86</span><span class="sep" aria-hidden="true"></span><span data-i18n="hero.lang">Русский и English</span></p>
+        <p class="hero-meta"><span class="js-file-meta">winrepair.exe, 1,8 МБ</span><span class="sep" aria-hidden="true"></span><span data-i18n="hero.meta">Windows 10 и 11, x64, x86 и ARM64</span><span class="sep" aria-hidden="true"></span><span data-i18n="hero.lang">Русский и English</span></p>
 
         <!-- Скриншот программы в 3D-рамке -->
         <div class="showcase js-showcase">
@@ -122,6 +122,29 @@
     </section>
 
     <!-- ===== Что умеет ===== -->
+    <!-- ===== Новое в программе ===== -->
+    <section class="new-band" id="new" aria-label="Новое в программе" data-i18n-attr="aria-label:new.label">
+      <div class="container">
+        <div class="new-grid">
+          <article class="glass new-card">
+            <span class="new-badge" data-i18n="new.badge">Новое</span>
+            <h3 data-i18n="new.1.t">Загрузочная флешка WinPE</h3>
+            <p data-i18n="new.1.d">Одна кнопка на главном экране — и программа соберёт собственный загрузочный WinPE с автозапуском WinRepair. Чините компьютер, который вообще не загружается.</p>
+          </article>
+          <article class="glass new-card">
+            <span class="new-badge" data-i18n="new.badge2">Новое</span>
+            <h3 data-i18n="new.2.t">Отмена изменений сеанса</h3>
+            <p data-i18n="new.2.d">Всё, что изменила программа за сеанс — реестр, файлы, BCD, карантин, — возвращается одной кнопкой.</p>
+          </article>
+          <article class="glass new-card">
+            <span class="new-badge" data-i18n="new.badge3">Новое</span>
+            <h3 data-i18n="new.3.t">Сборка ARM64</h3>
+            <p data-i18n="new.3.d">Теперь и для ноутбуков на Snapdragon — Windows on ARM.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="features">
       <div class="container">
         <header class="section-head">
@@ -350,8 +373,13 @@
               <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3zM5 19h14v2H5z"/></svg>
               <span data-i18n="dl.x86">Скачать 32-бит</span>
             </a>
+            <a class="btn btn-glass js-dl-arm64" href="#" target="_blank" rel="noopener" hidden>
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3zM5 19h14v2H5z"/></svg>
+              <span data-i18n="dl.arm64">Скачать ARM64</span>
+            </a>
           </div>
           <p class="dl-hint js-arch-hint" data-i18n="dl.hint">Не знаете, какую выбрать? Почти все современные компьютеры — 64-бит.</p>
+          <p class="dl-hint js-arm-note" data-i18n="dl.armNote" hidden>Ноутбук на Snapdragon (Windows on ARM)? Берите сборку ARM64.</p>
 
           <dl class="dl-facts">
             <div><dt data-i18n="dl.f.ver">Версия</dt><dd class="js-version">1.0.0</dd></div>
@@ -371,12 +399,6 @@
           <p class="dl-more"><a class="js-gh-releases" href="#" target="_blank" rel="noopener" data-i18n="dl.all">Все версии на GitHub</a><span class="js-dl-count"></span></p>
         </div>
 
-        <aside class="dl-side">
-          <h3 data-i18n="dl.changes">Что нового</h3>
-          <ul class="changelog js-changelog">
-            <li class="muted" data-i18n="dl.changesEmpty">Список изменений подтянется из GitHub Releases после первого релиза.</li>
-          </ul>
-        </aside>
       </div>
     </section>
 
@@ -387,6 +409,10 @@
           <h2 data-i18n="faq.title">Частые вопросы</h2>
         </header>
         <div class="faq">
+          <details class="glass">
+            <summary data-i18n="faq.8.q">Компьютер вообще не загружается — чем поможет программа?</summary>
+            <p data-i18n="faq.8.a">На любом работающем компьютере нажмите «Создать загрузочную флешку WinPE с WinRepair» на главном экране — программа соберёт собственный загрузочный WinPE (на базе Windows ADK или winre.wim). Загрузитесь с флешки: WinRepair запустится автоматически и сможет чинить установленную Windows — реестр, загрузку и BCD, системные файлы.</p>
+          </details>
           <details class="glass">
             <summary data-i18n="faq.1.q">Программа правда бесплатная?</summary>
             <p data-i18n="faq.1.a">Да. WinRepair Toolkit распространяется бесплатно, с открытым исходным кодом. Никаких платных версий, пробных периодов и рекламы.</p>
