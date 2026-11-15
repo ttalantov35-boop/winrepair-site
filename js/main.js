@@ -210,7 +210,7 @@
     markRecommended();
     const shaBox = $('.js-sha');
     if (!release) {
-      const size = lang === 'en' ? '1.8 MB' : '1,8 МБ';   // размер по умолчанию, пока нет релиза
+      const size = lang === 'en' ? '1.9 MB' : '1,9 МБ';   // размер по умолчанию, пока нет релиза
       $('.js-size').textContent = size;
       $('.js-file-meta').textContent = 'winrepair.exe, ' + size;
       if (!shaBox.dataset.ready) shaBox.textContent = t('noSha');
