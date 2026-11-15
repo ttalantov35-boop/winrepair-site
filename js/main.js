@@ -374,6 +374,6 @@
 
   /* ---------- Старт: язык ---------- */
   const savedLang = store.get('wrt-lang');
-  const initial = savedLang || ((navigator.language || 'ru').toLowerCase().startsWith('ru') ? 'ru' : 'en');
+  const initial = savedLang || 'en';
   if (initial !== 'ru') applyLang(initial); else { lang = 'ru'; renderRelease(); }
 })();
