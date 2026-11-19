@@ -145,7 +145,7 @@
      GitHub: ссылки, звёзды, релизы
      ========================================================== */
   const gh = CFG.github || {};
-  const ghConfigured = gh.owner && gh.repo && gh.owner !== 'ttalantov35-boop';
+  const ghConfigured = gh.owner && gh.repo && gh.owner !== 'https://github.com/ttalantov35-boop/WinRepair';
   const repoUrl = `https://github.com/${gh.owner}/${gh.repo}`;
   const releasesUrl = repoUrl + '/releases';
   const latestUrl = releasesUrl + '/latest';
