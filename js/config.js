@@ -4,7 +4,7 @@
 window.SITE_CONFIG = {
   // GitHub: владелец и имя репозитория программы
   github: {
-    owner: 'ttalantov35-boop' // ваш логин на GitHub
+    owner: 'ttalantov35-boop', // ваш логин на GitHub
     repo: 'WinRepair'        // имя репозитория программы (там лежат релизы)
   },
 
