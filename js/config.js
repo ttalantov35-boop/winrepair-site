@@ -26,7 +26,7 @@ window.SITE_CONFIG = {
 
   // Комментарии Giscus: значения берутся на https://giscus.app
   giscus: {
-    repo: 'WinRepair',
+    repo: 'ttalantov35-boop/winrepair-site',
     repoId: 'R_kgDOVtaP6A',
     category: 'Announcements',
     categoryId: 'DIC_kwDOVtaP6M4DLGi1'
