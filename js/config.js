@@ -4,8 +4,8 @@
 window.SITE_CONFIG = {
   // GitHub: владелец и имя репозитория программы
   github: {
-    owner: 'https://github.com/ttalantov35-boop/WinRepair',          // ваш логин на GitHub
-    repo: 'WinRepair'        // имя репозитория программы (там лежат релизы)
+    owner: 'ttalantov35-boop' // ваш логин на GitHub
+    repo: 'https://github.com/ttalantov35-boop/WinRepair'        // имя репозитория программы (там лежат релизы)
   },
 
   // Как распознать файлы в релизе (по части имени, без учёта регистра).
